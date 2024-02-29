@@ -23,21 +23,8 @@ a {
   max-width: 100%;
   height: auto;
   vertical-align: middle;
-  border-style: none;
-}
-
-.align-items-start {
-  align-items: start !important;
 }
 
 ul {
   list-style: none;
-}
-
-body {
-  font-family: $opensans;
-}
-
-.row {
-  @include flexbox(center, space-between);
 }

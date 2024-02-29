@@ -14,7 +14,7 @@
 @media screen and (min-width: 576px) {
   .container {
     max-width: 540px;
-    @extend %defaultSize;
+    @include defaultContainerSize();
   }
   @include createLayout("sm");
 }
@@ -22,23 +22,23 @@
 @media screen and (min-width: 768px) {
   .container {
     max-width: 720px;
-    @extend %defaultSize;
+    @include defaultContainerSize();
   }
-  @include createLayout("");
+  @include createLayout("md");
 }
 
 @media screen and (min-width: 992px) {
   .container {
     max-width: 960px;
-    @extend %defaultSize;
+    @include defaultContainerSize();
   }
-  @include createLayout("");
+  @include createLayout("lg");
 }
 
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1140px;
-    @extend %defaultSize;
+    @include defaultContainerSize();
   }
-  @include createLayout("");
+  @include createLayout("xl");
 }

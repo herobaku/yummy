@@ -4,8 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yummi</title>
+  <title>Yummy</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js" defer></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
@@ -37,7 +40,29 @@
       </div>
     </div>
   </header>
-  <section class="desc"></section>
+  <section class="desc">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 desc__left">
+          <h1 class="desc__left-title">Enjoy Your Healthy Delicious Food</h1>
+          <p class="desc__left-subtitle">Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum
+            quas
+            beatae cumque eum quaerat.</p>
+          <div class="d-flex align-items-center desc__left-button">
+            <a href="#" class="btn btn-danger">Book a Table</a>
+            <a href="#" class="d-flex align-items-center">
+              <i class='bx d-flex align-items-center bx-play-circle'></i>
+              <span>Watch Video</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-2"></div>
+        <div class="col-lg-5 desc__right">
+          <img src="./images/hero-img.png" alt="hero" class="img-fluid" />
+        </div>
+      </div>
+    </div>
+  </section>
   <main class="main">
     <section class="about">
       <div class="block__modal">
@@ -49,7 +74,7 @@
       <div class="about__construct">
         <div class="container">
           <div class="row align-items-start">
-            <div class="about__construct-poster">
+            <div class="col-lg-7 about__construct-poster">
               <div class="about__construct-bg">
                 <img src="./images/about.jpg" class="img-fluid" alt="hero">
                 <div class="about__construct-block">
@@ -58,18 +83,29 @@
                 </div>
               </div>
             </div>
-            <div class="about__construct-info">
+            <div class="col-lg-5 about__construct-info">
               <p class="about__construct-info-item">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua.
               </p>
               <ul class="about__construct-info-list">
-                <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li>Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                  voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                <li>
+                  <i class='bx bx-check-double'></i>
+                  <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+                </li>
+                <li>
+                  <i class='bx bx-check-double'></i>
+                  <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span>
+                </li>
+                <li>
+                  <i class='bx bx-check-double'></i>
+                  <span>
+                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.
+                  </span>
+                </li>
               </ul>
-              <p class="about__construct-info-item">
+              <p class="about__construct-info-item about__construct-info-normal">
                 Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
                 voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                 proident
@@ -82,50 +118,300 @@
         </div>
       </div>
     </section>
-    <section class="choose"></section>
-    <section class="clients"></section>
+    <section class="choose">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 choose__left">
+            <div class="choose__left-box">
+              <h2>Why Choose Yummy?</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Duis aute irure dolor in reprehenderit Asperiores dolores sed et. Tenetur quia eos.
+                Autem tempore quibusdam vel necessitatibus optio ad corporis.</p>
+              <a href="#" class="btn btn-danger">Learn More</a>
+            </div>
+          </div>
+          <div class="col-xl-8 col-lg-8 choose__right">
+            <div class="row">
+              <div class="col-lg-12 col-xl-4">
+                <div class="choose__right-box">
+                  <div class="choose__box-icon">
+                    <i class="bi bi-clipboard-data"></i>
+                  </div>
+                  <h2>Corporis voluptates officia eiusmod</h2>
+                  <p>
+                    Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-12 col-xl-4">
+                <div class="choose__right-box">
+                  <div class="choose__box-icon">
+                    <i class="bi bi-clipboard-data"></i>
+                  </div>
+                  <h2>Ullamco laboris ladore pan</h2>
+                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                </div>
+              </div>
+              <div class="col-lg-12 col-xl-4">
+                <div class="choose__right-box">
+                  <div class="choose__box-icon">
+                    <i class="bi bi-clipboard-data"></i>
+                  </div>
+                  <h2>Labore consequatur incidid dolore</h2>
+                  <p>
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="clients">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-xs-12">
+            <p>
+              Clients
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-6 col-xs-12">
+            <p>
+              Projects
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-6 col-xs-12">
+            <p>
+              Hours Of Support
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-6 col-xs-12">
+            <p>
+              Workers
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="testimonials">
       <div class="block__modal">
         <div class="container">
-          <h4 class="block__modal-title">About Us</h4>
-          <h2 class="block__modal-subtitle">Learn More <strong>About Us</strong></h2>
+          <h4 class="block__modal-title">Testimonials</h4>
+          <h2 class="block__modal-subtitle">What Are They <strong>Saying About Us</strong></h2>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-8">
+            <div class="row">
+              <div class="col-lg-10 border-right">
+                <p class="testimonials-text">
+                  <i class="bi bi-quote"></i>
+                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium
+                  quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                  <i class="bi bi-quote"></i>
+                </p>
+                <h2 class="testimonials-author">Saul Goodman</h2>
+                <h4 class="testimonials-title">Ceo & Founder</h4>
+                <div class="rating d-flex">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <img src="./images/testimonials-1.jpg" class="img-fluid founder" alt="author" />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2"></div>
         </div>
       </div>
     </section>
     <section class="events">
       <div class="block__modal">
         <div class="container">
-          <h4 class="block__modal-title">About Us</h4>
-          <h2 class="block__modal-subtitle">Learn More <strong>About Us</strong></h2>
+          <h4 class="block__modal-title">EVENTS</h4>
+          <h2 class="block__modal-subtitle">Share <strong>Your Moments</strong>In Our Restaurant</h2>
+        </div>
+      </div>
+      <div class="paties">
+        <div class="paties__block">
+          <h4 class="paties__block-title">Custom Parties</h4>
+          <h3 class="paties__block-currency">$99</h3>
+          <p class="paties__block-desc">
+            Quo corporis voluptas ea ad. Consectetur inventore sapiente ipsum voluptas eos omnis facere. Enim facilis
+            veritatis id est rem repudiandae nulla expedita quas.</p>
         </div>
       </div>
     </section>
     <section id="chefs">
       <div class="block__modal">
         <div class="container">
-          <h4 class="block__modal-title">About Us</h4>
-          <h2 class="block__modal-subtitle">Learn More <strong>About Us</strong></h2>
+          <h4 class="block__modal-title">CHEFS</h4>
+          <h2 class="block__modal-subtitle">Our <strong>Proffesional</strong>Chefs</h2>
+        </div>
+      </div>
+      <div class="section-article">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <article class="card">
+                <div class="card__top">
+                  <img src="./images/chefs-1.jpg" class="img-fluid" alt="chefs">
+                </div>
+                <div class="card__bottom">
+                  <h2 class="card__bottom-title">Walter White</h2>
+                  <h4 class="card__bottom-subtitle">Master Chef</h4>
+                  <p class="card__bottom-desc">
+                    Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum
+                    exercitationem
+                    iure minima enim corporis et voluptate.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-lg-4">
+              <article class="card">
+                <div class="card__top">
+                  <img src="./images/chefs-1.jpg" class="img-fluid" alt="chefs">
+                  <ul class="card__top-menu">
+                    <li class="card__top-menu-item">
+                      <a href="#">
+                        <i class='bx bxl-twitter'></i>
+                      </a>
+                    </li>
+                    <li class="card__top-menu-item">
+                      <a href="#">
+                        <i class='bx bxl-facebook-circle'></i>
+                      </a>
+                    </li>
+                    <li class="card__top-menu-item">
+                      <a href="#">
+                        <i class='bx bxl-instagram'></i>
+                      </a>
+                    </li>
+                    <li class="card__top-menu-item">
+                      <a href="#">
+                        <i class='bx bxl-linkedin-square'></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card__bottom">
+                  <h2 class="card__bottom-title">Walter White</h2>
+                  <h4 class="card__bottom-subtitle">Master Chef</h4>
+                  <p class="card__bottom-desc">
+                    Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum
+                    exercitationem
+                    iure minima enim corporis et voluptate.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-lg-4">
+              <article class="card">
+                <div class="card__top">
+                  <img src="./images/chefs-1.jpg" class="img-fluid" alt="chefs">
+                </div>
+                <div class="card__bottom">
+                  <h2 class="card__bottom-title">Walter White</h2>
+                  <h4 class="card__bottom-subtitle">Master Chef</h4>
+                  <p class="card__bottom-desc">
+                    Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum
+                    exercitationem
+                    iure minima enim corporis et voluptate.</p>
+                </div>
+              </article>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <section class="state">
       <div class="block__modal">
         <div class="container">
-          <h4 class="block__modal-title">About Us</h4>
-          <h2 class="block__modal-subtitle">Learn More <strong>About Us</strong></h2>
+          <h4 class="block__modal-title">BOOK A TABLE</h4>
+          <h2 class="block__modal-subtitle">Book <strong>Your Stay</strong>With Us</h2>
         </div>
       </div>
+
     </section>
     <section id="contact">
       <div class="block__modal">
         <div class="container">
-          <h4 class="block__modal-title">About Us</h4>
-          <h2 class="block__modal-subtitle">Learn More <strong>About Us</strong></h2>
+          <h4 class="block__modal-title">CONTACT</h4>
+          <h2 class="block__modal-subtitle">Need Help? <strong>Contact Us</strong></h2>
         </div>
       </div>
+      <div class="container">
+        <iframe style="border:0; width: 100%; height: 350px;"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
+          frameborder="0" allowfullscreen=""></iframe>
+          
+      </div>
+
     </section>
   </main>
-  <footer class="footer"></footer>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="row align-items-start">
+          <div class="col-lg-3 icons col-md-6 col-xs-12 col-sm-12">
+            <h2>Address</h2>
+            <i class="bi bx bi-geo-alt"></i>
+            <ul class="footer__top-menu">
+              <li class="footer__top-menu-item">A108 Adam Street</li>
+              <li class="footer__top-menu-item">New York, NY 535022 - US</li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 icons col-xs-12 col-sm-12">
+            <h2>Reservations</h2>
+            <i class="bi bx bi-telephone"></i>
+            <ul class="footer__top-menu">
+              <li class="footer__top-menu-item">Phone: +1 5589 55488 55</li>
+              <li class="footer__top-menu-item">Email: info@example.com</li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 icons col-xs-12 col-sm-12">
+            <h2>Opening Hours</h2>
+            <i class="bi bx bi-clock"></i>
+            <ul class="footer__top-menu">
+              <li class="footer__top-menu-item">Mon-Sat: 11AM - 23PM</li>
+              <li class="footer__top-menu-item">Sunday: Closed</li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 icons col-xs-12 col-sm-12">
+            <h2>Follow Us</h2>
+            <div class="social-icon d-flex">
+              <div class="icon">
+                <i class='bx bxl-twitter'></i>
+              </div>
+              <div class="icon">
+                <i class='bx bxl-facebook-circle'></i>
+              </div>
+              <div class="icon">
+                <i class='bx bxl-instagram'></i>
+              </div>
+              <div class="icon">
+                <i class='bx bxl-linkedin-square'></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="row">
+          <div class="col-sm-12 col-xs-12">
+            <p>© Copyright <strong>Yummy</strong>. All Rights Reserved</p>
+            <p>Designed by BootstrapMade</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>

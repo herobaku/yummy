@@ -1,7 +1,26 @@
+body {
+  font-family: $opensans;
+}
+
+.row {
+  @include flexbox(center, space-between);
+}
+
+a.btn {
+  border-radius: 50px;
+  padding: 8px 20px;
+  font-size: 14px;
+  &.btn-danger {
+    color: #fff;
+    background: $red;
+  }
+}
+
 /* ======================    Main Begin      ======================= */
 .main section {
   padding-block: 60px;
 }
+/* ======================    Main Eng      ======================= */
 
 /* ======================    Block Modal Begin      ======================= */
 
@@ -21,11 +40,9 @@
     }
   }
 }
-
 /* ======================    Block Modal End      ======================= */
 
 /* ======================    Header Begin      ======================= */
-
 .header {
   padding-block: 25px;
   & .logo {
@@ -38,7 +55,7 @@
     }
   }
   .navbar {
-    @include flexbox(align-items, normal);
+    @include flexbox(center, normal);
     & .nav-item {
       padding-inline: 20px;
       & .nav-link {
@@ -70,25 +87,13 @@
       }
     }
   }
-  & .btn {
-    border-radius: 50px;
-    padding: 8px 20px;
-    font-size: 14px;
-  }
-  & .btn-danger {
-    color: #fff;
-    background: $red;
-  }
 }
-
 /* ======================    Header end      ======================= */
 
 /* ======================    Desc Begin      ======================= */
-
 .desc {
   background: #eee;
 }
-
 /* ======================    Desc End      ======================= */
 
 /* ======================    About Begin      ======================= */
@@ -97,17 +102,14 @@
 }
 /* ======================    About End      ======================= */
 
-/* ======================    Font Family Begin      ======================= */
+/* ======================    About Construct Begin      ======================= */
 .about__construct {
   margin-top: 25px;
-  &-poster {
-    max-width: 57%;
-    width: 100%;
-  }
+  // &-poster {
+  // }
   &-bg {
     position: relative;
     & img {
-      width: 100%;
       min-height: 500px;
       object-fit: cover;
     }
@@ -136,9 +138,371 @@
     }
   }
   &-info {
-    max-width: 43%;
-    width: 100%;
     padding-left: 3rem;
+    &-item {
+      font: italic 16px $opensans;
+      margin-bottom: 16px;
+      color: $black;
+    }
+    &-list {
+      margin-bottom: 16px;
+      position: relative;
+      & > li {
+        font: 16px $opensans;
+        color: $black;
+        padding-bottom: 8px;
+        & i {
+          position: absolute;
+          left: 0;
+        }
+        & > span {
+          margin-inline-start: 28px;
+          padding-inline: 28px;
+        }
+      }
+    }
+    &-normal {
+      font-style: normal;
+    }
   }
 }
-/* ======================    Font Family Begin      ======================= */
+/* ======================    About Construct end      ======================= */
+
+/* ======================    Enjoy Begin      ======================= */
+.desc__left {
+  &-title {
+    font: 700 64px $amatic;
+    color: $blackGray;
+    margin-bottom: 20px;
+  }
+  &-subtitle {
+    color: #4f4f5a;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+  &-button {
+    gap: 25px;
+    & i {
+      width: 32px;
+      height: 32px;
+      font-size: 2.3rem;
+      color: $red;
+      margin-right: 8px;
+    }
+    & span {
+      font-size: 16px;
+      font-weight: 600;
+      color: $black;
+    }
+  }
+}
+
+/* ======================    Why Choose Begin      ======================= */
+.choose {
+  background: #eee;
+  &__left {
+    &-box {
+      padding: 30px;
+      background: $red;
+      & h2 {
+        color: #fff;
+        font: 700 34px $inter;
+        margin-bottom: 30px;
+      }
+      & p {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #fff;
+        margin-bottom: 30px;
+      }
+      & .btn {
+        padding: 6px 30px 8px 30px !important;
+        color: #fff;
+        max-width: max-content;
+        margin: auto;
+        display: block;
+      }
+      & .btn-danger {
+        background: #ffffff4d !important;
+      }
+    }
+  }
+  &__right {
+    text-align: center;
+    &-box {
+      background: #fff;
+      padding: 40px 30px;
+      border: 1px solid rgba(55, 55, 63, 0.1);
+      transition: 0.3s;
+    }
+  }
+}
+/* ======================    Why Choose End      ======================= */
+
+/* ======================    Clients End      ======================= */
+.clients {
+  padding-block: 100px !important;
+  position: relative;
+  background: url("../images/stats-bg.jpg") no-repeat center/cover fixed;
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000aa;
+  }
+}
+/* ======================    Testimonials End      ======================= */
+.border-right {
+  border-left: 3px solid red;
+  padding-left: 25px;
+}
+.testimonials {
+  padding-block: 80px;
+  background: #eee;
+}
+
+.testimonials-text {
+  color: $black;
+  font-size: 16px;
+  line-height: 1.5;
+  font-style: italic;
+  position: relative;
+  margin-bottom: 16px;
+  & i {
+    color: #f05656;
+    font-size: 1.5rem;
+    display: inline-block;
+  }
+  & i:nth-child(1) {
+    transform: translate(0px, 0px);
+    transform-origin: top right;
+    margin-right: 10px;
+  }
+  & i:nth-child(2) {
+    transform: rotate(180deg) translate(20px, 25px);
+    transform-origin: bottom right;
+  }
+}
+
+.testimonials-author {
+  margin: 10px 0 5px 0;
+  font: 700 20px $inter;
+  color: $black;
+}
+
+.testimonials-title {
+  font: 500 14px $inter;
+  color: #6c757d;
+  margin-bottom: 10px;
+}
+
+.rating {
+  color: #ffc107;
+  & i {
+    margin-inline: 1px;
+  }
+}
+
+.founder {
+  max-width: 196px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+/* ======================    Testimonials End      ======================= */
+
+/* ======================    Footer Begin      ======================= */
+footer.footer {
+  padding: 50px 0;
+  background: #1f1f24;
+}
+
+.icons {
+  position: relative;
+  & > .bx {
+    position: absolute;
+    color: #fff;
+    top: 0;
+    left: 0;
+    font-size: 1.5rem;
+  }
+}
+
+.footer__top {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ffffff1a;
+  & h2 {
+    margin-bottom: 8px;
+    padding-bottom: 5px;
+    padding-left: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+  }
+  &-menu {
+    padding-left: 25px;
+    margin-bottom: 16px;
+    &-item {
+      color: #ffffffb3;
+      font-size: 14px;
+    }
+  }
+  & .social-icon {
+    margin-top: 8px;
+    padding-bottom: 5px;
+    column-gap: 10px;
+    & .icon {
+      @include flexbox(center, center);
+      width: 40px;
+      cursor: pointer;
+      height: 40px;
+      border: 1px solid #ffffff33;
+      color: #ffffffb3;
+      border-radius: 50%;
+      transition: all 0.3s;
+      &:hover {
+        border-color: #fff;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.footer__bottom {
+  margin-top: 30px;
+  text-align: center;
+  & p {
+    color: #fff;
+    font-size: 14px;
+  }
+  & p + p {
+    padding-top: 4px;
+    font-size: 13px;
+    display: block;
+  }
+}
+
+/* ======================    Footer End      ======================= */
+
+/* ======================    Paties Begin      ======================= */
+.paties {
+  background: url("../images/events-1.jpg") no-repeat center/cover;
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: $black;
+    opacity: 0.5;
+    pointer-events: none;
+    z-index: -1;
+  }
+  &__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: start;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    min-height: 600px;
+    height: 100%;
+    &-title {
+      font: 700 24px $inter;
+      margin-bottom: 5px;
+    }
+    &-currency {
+      color: #fff;
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 15px;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: $red;
+        width: 100%;
+        height: 2px;
+      }
+    }
+    &-desc {
+      font-size: 16px;
+    }
+  }
+}
+/* ======================    Event End      ======================= */
+#chefs {
+  background: #eee;
+}
+
+.section-article {
+  margin-top: 30px;
+}
+
+.card {
+  background: #fff;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: all 0.3s;
+  &__top {
+    transition: all .5s;
+    position: relative;
+    &-menu {
+      background: #ffffff4d;
+      position: absolute;
+      top: 50%;
+      right: -100%;
+      transform: translateX(0);
+      display: flex;
+      flex-direction: column;
+      transform: translateY(-50%);
+      border-radius: 4px;
+      &-item {
+        & a {
+          font-size: 18px;
+          margin: 10px 15px;
+          display: block;
+          color: #37373f66;
+        }
+      }
+    }
+  }
+  &__bottom {
+    text-align: center;
+    padding: 10px 15px 20px 15px;
+    &-title {
+      font: 700 20px $inter;
+      margin-bottom: 5px;
+      color: $blackGray;
+    }
+    &-subtitle {
+      font-size: 14px;
+      font-weight: 400;
+      color: #21252966;
+    }
+    &-desc {
+      font-style: italic;
+      font-size: 14px;
+      line-height: 26px;
+      padding-top: 15px;
+      color: #212529b3;
+    }
+  }
+  &:hover {
+    transform: scale(1.1);
+  }
+  &:hover .card__top-menu {
+    // right: 0;
+    transform: translateX(30px);
+  }
+}
+/* ======================    Chefs End      ======================= */
+
+
+/* ======================    Contact End      ======================= */
