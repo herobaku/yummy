@@ -1,0 +1,144 @@
+/* ======================    Main Begin      ======================= */
+.main section {
+  padding-block: 60px;
+}
+
+/* ======================    Block Modal Begin      ======================= */
+
+.block__modal {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  &-title {
+    font: 400 13px $opensans;
+    color: $graylight;
+  }
+  &-subtitle {
+    font: 48px $amatic;
+    color: $black;
+    & strong {
+      color: $red;
+    }
+  }
+}
+
+/* ======================    Block Modal End      ======================= */
+
+/* ======================    Header Begin      ======================= */
+
+.header {
+  padding-block: 25px;
+  & .logo {
+    font-size: 28px;
+    font-family: $inter;
+    color: $black;
+    font-weight: bold;
+    & .logo-dots {
+      color: $red;
+    }
+  }
+  .navbar {
+    @include flexbox(align-items, normal);
+    & .nav-item {
+      padding-inline: 20px;
+      & .nav-link {
+        position: relative;
+        color: $graylight;
+        font-size: 16px;
+        padding-inline: 3px;
+        font-weight: 600;
+        transition: all 0.5s;
+        display: inline-block;
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: -5px;
+          left: 0;
+          transition: all 0.5s;
+          right: 0;
+          display: block;
+          width: 0%;
+          height: 2px;
+          background: $red;
+        }
+        &:hover::before {
+          width: 100%;
+        }
+        &:hover {
+          color: $black;
+        }
+      }
+    }
+  }
+  & .btn {
+    border-radius: 50px;
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+  & .btn-danger {
+    color: #fff;
+    background: $red;
+  }
+}
+
+/* ======================    Header end      ======================= */
+
+/* ======================    Desc Begin      ======================= */
+
+.desc {
+  background: #eee;
+}
+
+/* ======================    Desc End      ======================= */
+
+/* ======================    About Begin      ======================= */
+.about {
+  background: #fff;
+}
+/* ======================    About End      ======================= */
+
+/* ======================    Font Family Begin      ======================= */
+.about__construct {
+  margin-top: 25px;
+  &-poster {
+    max-width: 57%;
+    width: 100%;
+  }
+  &-bg {
+    position: relative;
+    & img {
+      width: 100%;
+      min-height: 500px;
+      object-fit: cover;
+    }
+  }
+  &-block {
+    position: absolute;
+    width: 70%;
+    text-align: center;
+    bottom: 30px;
+    margin-inline: auto;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: #fff;
+    &-title {
+      padding-bottom: 5px;
+      font-size: 24px;
+      color: $black;
+    }
+    &-subtitle {
+      padding-bottom: 16px;
+      font-size: 28px;
+      & a {
+        color: $red;
+      }
+    }
+  }
+  &-info {
+    max-width: 43%;
+    width: 100%;
+    padding-left: 3rem;
+  }
+}
+/* ======================    Font Family Begin      ======================= */

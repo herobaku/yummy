@@ -1,0 +1,13 @@
+@mixin flexbox($align, $justify) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin createLayout($size) {
+  @for $i from 1 through 12 {
+    .col-#{$size}-#{$i} {
+      width: #{calc(100% / 12 * $i)};
+    }
+  }
+}

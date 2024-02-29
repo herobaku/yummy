@@ -1,0 +1,43 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+  background: transparent;
+}
+
+a {
+  text-decoration: none;
+  list-style: none;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border-style: none;
+}
+
+.align-items-start {
+  align-items: start !important;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: $opensans;
+}
+
+.row {
+  @include flexbox(center, space-between);
+}

@@ -1,0 +1,44 @@
+@mixin defaultContainerSize {
+  margin: 0 auto;
+  padding-inline: 1rem;
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 100%;
+    @include defaultContainerSize();
+  }
+  @include createLayout("xs");
+}
+
+@media screen and (min-width: 576px) {
+  .container {
+    max-width: 540px;
+    @extend %defaultSize;
+  }
+  @include createLayout("sm");
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+    @extend %defaultSize;
+  }
+  @include createLayout("");
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 960px;
+    @extend %defaultSize;
+  }
+  @include createLayout("");
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+    @extend %defaultSize;
+  }
+  @include createLayout("");
+}

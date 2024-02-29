@@ -1,3 +1,7 @@
+/* ======================    Font Family Begin      ======================= */
+/* ======================    Font Family End      ======================= */
+/* ======================    Color Begin      ======================= */
+/* ======================    Color End      ======================= */
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
@@ -36,25 +40,6 @@ a {
           align-items: start !important;
 }
 
-.container {
-  max-width: 1280px;
-  width: 100%;
-  margin-inline: auto;
-  padding: 0 15px;
-}
-
-.row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 ul {
   list-style: none;
 }
@@ -63,11 +48,91 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 100%;
+  }
+  .col--1 {
+    width: 8.3333333333%;
+  }
+  .col--2 {
+    width: 16.6666666667%;
+  }
+  .col--3 {
+    width: 25%;
+  }
+  .col--4 {
+    width: 33.3333333333%;
+  }
+  .col--5 {
+    width: 41.6666666667%;
+  }
+  .col--6 {
+    width: 50%;
+  }
+  .col--7 {
+    width: 58.3333333333%;
+  }
+  .col--8 {
+    width: 66.6666666667%;
+  }
+  .col--9 {
+    width: 75%;
+  }
+  .col--10 {
+    width: 83.3333333333%;
+  }
+  .col--11 {
+    width: 91.6666666667%;
+  }
+  .col--12 {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 576px) {
+  .col-sm-1 {
+    width: 8.3333333333%;
+  }
+  .col-sm-2 {
+    width: 16.6666666667%;
+  }
+  .col-sm-3 {
+    width: 25%;
+  }
+  .col-sm-4 {
+    width: 33.3333333333%;
+  }
+  .col-sm-5 {
+    width: 41.6666666667%;
+  }
+  .col-sm-6 {
+    width: 50%;
+  }
+  .col-sm-7 {
+    width: 58.3333333333%;
+  }
+  .col-sm-8 {
+    width: 66.6666666667%;
+  }
+  .col-sm-9 {
+    width: 75%;
+  }
+  .col-sm-10 {
+    width: 83.3333333333%;
+  }
+  .col-sm-11 {
+    width: 91.6666666667%;
+  }
+  .col-sm-12 {
+    width: 100%;
+  }
+}
+/* ======================    Main Begin      ======================= */
 .main section {
   padding-block: 60px;
 }
 
-/* Block Modal */
+/* ======================    Block Modal Begin      ======================= */
 .block__modal {
   text-align: center;
   text-transform: uppercase;
@@ -85,8 +150,8 @@ body {
   color: #ce1212;
 }
 
-/* Block Modal End */
-/* Header */
+/* ======================    Block Modal End      ======================= */
+/* ======================    Header Begin      ======================= */
 .header {
   padding-block: 25px;
 }
@@ -152,18 +217,20 @@ body {
   background: #ce1212;
 }
 
-/*Header end*/
-/* Desc */
+/* ======================    Header end      ======================= */
+/* ======================    Desc Begin      ======================= */
 .desc {
   background: #eee;
 }
 
-/* Desc End */
-/* About */
+/* ======================    Desc End      ======================= */
+/* ======================    About Begin      ======================= */
 .about {
   background: #fff;
 }
 
+/* ======================    About End      ======================= */
+/* ======================    Font Family Begin      ======================= */
 .about__construct {
   margin-top: 25px;
 }
@@ -209,4 +276,4 @@ body {
   padding-left: 3rem;
 }
 
-/* About End *//*# sourceMappingURL=style.css.map */
+/* ======================    Font Family Begin      ======================= *//*# sourceMappingURL=style.css.map */
