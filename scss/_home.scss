@@ -6,7 +6,7 @@ body {
   @include flexbox(center, space-between);
 }
 
-a.btn {
+.btn {
   border-radius: 50px;
   padding: 8px 20px;
   font-size: 14px;
@@ -44,6 +44,10 @@ a.btn {
 
 /* ======================    Header Begin      ======================= */
 .header {
+  position: fixed;
+  background: #fff;
+  width: 100%;
+  border-bottom: 1px solid #eee;
   padding-block: 25px;
   & .logo {
     font-size: 28px;
@@ -88,11 +92,18 @@ a.btn {
     }
   }
 }
+.menu-mobile {
+  display: none!important;
+}
 /* ======================    Header end      ======================= */
 
 /* ======================    Desc Begin      ======================= */
 .desc {
   background: #eee;
+  padding-top: 100px;
+  & .container {
+    padding: 50px 0;
+  }
 }
 /* ======================    Desc End      ======================= */
 
@@ -406,7 +417,7 @@ footer.footer {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    align-items: start;
+    align-items: flex-start;
     padding-bottom: 40px;
     padding-left: 40px;
     min-height: 600px;
@@ -451,7 +462,7 @@ footer.footer {
   border-radius: 10px;
   transition: all 0.3s;
   &__top {
-    transition: all .5s;
+    transition: all 0.5s;
     position: relative;
     &-menu {
       background: #ffffff4d;
@@ -495,7 +506,7 @@ footer.footer {
     }
   }
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.08);
   }
   &:hover .card__top-menu {
     // right: 0;
@@ -503,6 +514,141 @@ footer.footer {
   }
 }
 /* ======================    Chefs End      ======================= */
-
-
+.address__block-card {
+  background: #f4f4f4;
+  padding: 30px;
+  height: 100%;
+  margin-top: 15px;
+  & i {
+    @include flexbox(center, center);
+    font-size: 24px;
+    border-radius: 50px;
+    background: $red;
+    color: #fff;
+    width: 56px;
+    height: 56px;
+    margin-right: 15px;
+  }
+  &-desc {
+    & h2 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 5px;
+      color: #6c757d;
+    }
+    & h4 {
+      font-size: 14px;
+      color: $black;
+      font-weight: normal;
+    }
+  }
+}
+.address__form {
+  background: #fff;
+  margin-top: 30px;
+  box-shadow: 0 0 30px #00000014;
+  padding: 24px;
+  & textarea {
+    height: 127px !important;
+  }
+  & .input,
+  textarea {
+    width: 100%;
+    height: 48px;
+    font-size: 14px;
+    padding: 0.375rem 0.75rem;
+    font-weight: 400;
+    border: 1px solid #dee2e6;
+    &:focus {
+      outline: 1px solid $red;
+      border: 1px solid $red;
+    }
+  }
+  & .form {
+    padding-bottom: 20px;
+  }
+  & button {
+    display: inline-block;
+    text-align: center;
+    margin: auto;
+    padding: 12px 40px !important;
+    border-radius: 50px;
+    font-size: 16px;
+    font-family: $opensans;
+  }
+}
 /* ======================    Contact End      ======================= */
+
+.reservation {
+  background: url("../images/reservation.jpg") no-repeat center/cover;
+  min-height: 500px;
+}
+
+.gray {
+  background: #37373f0a;
+}
+
+.stateCont {
+  padding-inline: 40px;
+  & textarea {
+    min-height: 131px !important;
+  }
+  & input,
+  textarea {
+    width: 100%;
+    height: 48px;
+    margin-bottom: 24px;
+    font-size: 14px;
+    padding: 0.375rem 0.75rem;
+    font-weight: 400;
+    border: 1px solid #dee2e6;
+    &:focus {
+      outline: 1px solid $red;
+      border: 1px solid $red;
+    }
+  }
+  & button {
+    display: inline-block;
+    text-align: center;
+    margin: auto;
+    padding: 12px 40px !important;
+    border-radius: 50px;
+    font-size: 16px;
+    font-family: $opensans;
+  }
+}
+
+/* ======================    Book End      ======================= */
+
+
+
+.construct-bg {
+  background: url("../images/about.jpg") no-repeat center/cover;
+  min-height: 750px;
+}
+
+
+@media screen and (max-width: 1285px) {
+  .navbar {
+    display: none!important;
+  }
+  .menu-mobile {
+    display: block!important;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .mobile-top {
+    order: 1;
+  }
+  .mobile-bottom {
+    order: 2;
+    text-align: center;
+    @include flexbox(center, center);
+    flex-direction: column;
+  }
+  .desc__left-title {
+    font-size: 36px;
+  }
+}
