@@ -5,18 +5,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yummy</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <!-- Icons -->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js" defer></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Bootstrap Only Grid -->
+  <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
+  <!-- My Custom Style -->
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
   <header class="header">
     <div class="container">
-      <div class="row">
+      <div class="d-flex justify-content-between align-items-center">
         <a href="#" class="logo">Yummy<span class="logo-dots">.</span></a>
-        <ul class="navbar">
+        <ul class="navbar d-flex">
           <li class="nav-item">
             <a href="#" class="nav-link">Home</a>
           </li>
@@ -43,13 +46,13 @@
   </header>
   <section class="desc">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-5 desc__left mobile-bottom">
+      <div class="row align-items-lg-center">
+        <div class="col-lg-5 desc__left order-2 order-lg-1 text-lg-left text-center">
           <h1 class="desc__left-title">Enjoy Your Healthy Delicious Food</h1>
           <p class="desc__left-subtitle">Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum
             quas
             beatae cumque eum quaerat.</p>
-          <div class="d-flex align-items-center desc__left-button">
+          <div class="d-flex justify-content-center justify-content-lg-start align-items-center desc__left-button">
             <a href="#" class="btn btn-danger">Book a Table</a>
             <a href="#" class="d-flex align-items-center">
               <i class='bx d-flex align-items-center bx-play-circle'></i>
@@ -57,8 +60,7 @@
             </a>
           </div>
         </div>
-        <div class="col-lg-2"></div>
-        <div class="col-lg-5 desc__right mobile-top">
+        <div class="col-lg-5 offset-lg-2 order-lg-2 order-1 desc__right text-center">
           <img src="./images/hero-img.png" alt="hero" class="img-fluid" />
         </div>
       </div>
@@ -74,44 +76,47 @@
       </div>
       <div class="about__construct">
         <div class="container">
-          <div class="row align-items-start">
-            <div class="col-lg-7 about__construct-poster">
-              <div class="about__construct-bg construct-bg">
+          <div class="row">
+            <div class="col-lg-7 about__construct-poster d-flex">
+              <div class="about__construct-bg">
+                <img src="./images/about.jpg" class="img-fluid" alt="img" />
                 <div class="about__construct-block">
                   <h3 class="about__construct-block-title">Book a Table</h3>
                   <h2 class="about__construct-block-subtitle"><a href="tel:+1 5589 55488 55">+1 5589 55488 55</a></h2>
                 </div>
               </div>
             </div>
-            <div class="col-lg-5 about__construct-info">
-              <p class="about__construct-info-item">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.
-              </p>
-              <ul class="about__construct-info-list">
-                <li>
-                  <i class='bx bx-check-double'></i>
-                  <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
-                </li>
-                <li>
-                  <i class='bx bx-check-double'></i>
-                  <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span>
-                </li>
-                <li>
-                  <i class='bx bx-check-double'></i>
-                  <span>
-                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                    voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.
-                  </span>
-                </li>
-              </ul>
-              <p class="about__construct-info-item about__construct-info-normal">
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident
-              </p>
-              <div class="about__construct-info-play">
-                <img src="./images/about-2.jpg" class="img-fluid" alt="">
+            <div class="col-lg-5 ">
+              <div class="about__construct-info">
+                <p class="about__construct-info-item">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua.
+                </p>
+                <ul class="about__construct-info-list">
+                  <li>
+                    <i class='bx bx-check-double'></i>
+                    <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+                  </li>
+                  <li>
+                    <i class='bx bx-check-double'></i>
+                    <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span>
+                  </li>
+                  <li>
+                    <i class='bx bx-check-double'></i>
+                    <span>
+                      Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                      voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.
+                    </span>
+                  </li>
+                </ul>
+                <p class="about__construct-info-item about__construct-info-normal">
+                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                  voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                  proident
+                </p>
+                <div class="about__construct-info-play">
+                  <img src="./images/about-2.jpg" class="img-fluid" alt="">
+                </div>
               </div>
             </div>
           </div>
@@ -500,6 +505,7 @@
       </div>
     </div>
   </footer>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
 
 </html>

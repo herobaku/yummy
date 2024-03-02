@@ -2,10 +2,6 @@ body {
   font-family: $opensans;
 }
 
-.row {
-  @include flexbox(center, space-between);
-}
-
 .btn {
   border-radius: 50px;
   padding: 8px 20px;
@@ -48,7 +44,8 @@ body {
   background: #fff;
   width: 100%;
   border-bottom: 1px solid #eee;
-  padding-block: 25px;
+  padding-block: 27.5px;
+  z-index: 999;
   & .logo {
     font-size: 28px;
     font-family: $inter;
@@ -59,7 +56,6 @@ body {
     }
   }
   .navbar {
-    @include flexbox(center, normal);
     & .nav-item {
       padding-inline: 20px;
       & .nav-link {
@@ -93,17 +89,14 @@ body {
   }
 }
 .menu-mobile {
-  display: none!important;
+  display: none !important;
 }
 /* ======================    Header end      ======================= */
 
 /* ======================    Desc Begin      ======================= */
 .desc {
   background: #eee;
-  padding-top: 100px;
-  & .container {
-    padding: 50px 0;
-  }
+  padding: 150px 0 50px;
 }
 /* ======================    Desc End      ======================= */
 
@@ -115,14 +108,14 @@ body {
 
 /* ======================    About Construct Begin      ======================= */
 .about__construct {
-  margin-top: 25px;
-  // &-poster {
-  // }
+  margin-top: 30px;
+  height: 100%;
   &-bg {
     position: relative;
     & img {
-      min-height: 500px;
+      height: 100%;
       object-fit: cover;
+      aspect-ratio: 4/4;
     }
   }
   &-block {
@@ -149,7 +142,10 @@ body {
     }
   }
   &-info {
-    padding-left: 3rem;
+    padding-left: 2.5rem;
+    @media screen and (max-width: 991px) {
+      padding-left: 0rem;
+    }
     &-item {
       font: italic 16px $opensans;
       margin-bottom: 16px;
@@ -157,18 +153,21 @@ body {
     }
     &-list {
       margin-bottom: 16px;
-      position: relative;
       & > li {
         font: 16px $opensans;
         color: $black;
         padding-bottom: 8px;
+        position: relative;
         & i {
           position: absolute;
           left: 0;
+          top: 0;
+          font-size: 1.3rem;
+          color: $red;
         }
         & > span {
           margin-inline-start: 28px;
-          padding-inline: 28px;
+          display: block;
         }
       }
     }
@@ -364,7 +363,6 @@ footer.footer {
     padding-bottom: 5px;
     column-gap: 10px;
     & .icon {
-      @include flexbox(center, center);
       width: 40px;
       cursor: pointer;
       height: 40px;
@@ -520,7 +518,6 @@ footer.footer {
   height: 100%;
   margin-top: 15px;
   & i {
-    @include flexbox(center, center);
     font-size: 24px;
     border-radius: 50px;
     background: $red;
@@ -620,34 +617,28 @@ footer.footer {
 
 /* ======================    Book End      ======================= */
 
-
-
 .construct-bg {
   background: url("../images/about.jpg") no-repeat center/cover;
   min-height: 750px;
 }
 
-
 @media screen and (max-width: 1285px) {
   .navbar {
-    display: none!important;
+    display: none !important;
   }
   .menu-mobile {
-    display: block!important;
+    display: block !important;
     font-size: 1.5rem;
   }
 }
 
-@media screen and (max-width: 992px) {
-  .mobile-top {
-    order: 1;
+@media screen and (max-width: 991px) {
+  .desc__left {
+    margin-top: 20px;
   }
-  .mobile-bottom {
-    order: 2;
-    text-align: center;
-    @include flexbox(center, center);
-    flex-direction: column;
-  }
+}
+
+@media screen and (max-width: 640px) {
   .desc__left-title {
     font-size: 36px;
   }
