@@ -32,8 +32,25 @@
           <li class="nav-item">
             <a href="#" class="nav-link">Chefs</a>
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Drop Down</a>
+          <li class="nav-item submenu-link">
+            <a href="#" class="nav-link">Drop Down </a>
+            <ul class="submenu">
+              <li><a href="#" class="nav-link">Drop Down 1</a></li>
+              <li class="submenu-link">
+                <a href="#" class="nav-link d-flex justify-content-between align-items-center">
+                  Deep Drop Down
+                  <i class='bx bxs-chevron-down ps-4'></i>
+                </a>
+                <ul class="submenu-two">
+                  <li><a href="#" class="nav-link">Drop Down 1</a></li>
+                  <li><a href="#" class="nav-link">Drop Down 2</a></li>
+                  <li><a href="#" class="nav-link">Drop Down 3</a></li>
+                </ul>
+              </li>
+              <li><a href="#" class="nav-link">Drop Down 2</a></li>
+              <li><a href="#" class="nav-link">Drop Down 3</a></li>
+              <li><a href="#" class="nav-link">Drop Down 4</a></li>
+            </ul>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">Contact</a>
@@ -125,8 +142,8 @@
     </section>
     <section class="choose">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-4 choose__left">
+        <div class="row g-4">
+          <div class="col-xl-4 col-lg-4 choose__left">
             <div class="choose__left-box">
               <h2>Why Choose Yummy?</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -135,11 +152,11 @@
               <a href="#" class="btn btn-danger">Learn More</a>
             </div>
           </div>
-          <div class="col-xl-8 col-lg-8 choose__right">
-            <div class="row">
+          <div class="col-xl-8 col-lg-8 align-items-center d-flex text-center choose__right">
+            <div class="row flex-column g-4 flex-xl-row">
               <div class="col-lg-12 col-xl-4">
                 <div class="choose__right-box">
-                  <div class="choose__box-icon">
+                  <div class="choose__right-box-icon">
                     <i class="bi bi-clipboard-data"></i>
                   </div>
                   <h2>Corporis voluptates officia eiusmod</h2>
@@ -150,7 +167,7 @@
               </div>
               <div class="col-lg-12 col-xl-4">
                 <div class="choose__right-box">
-                  <div class="choose__box-icon">
+                  <div class="choose__right-box-icon">
                     <i class="bi bi-clipboard-data"></i>
                   </div>
                   <h2>Ullamco laboris ladore pan</h2>
@@ -159,7 +176,7 @@
               </div>
               <div class="col-lg-12 col-xl-4">
                 <div class="choose__right-box">
-                  <div class="choose__box-icon">
+                  <div class="choose__right-box-icon">
                     <i class="bi bi-clipboard-data"></i>
                   </div>
                   <h2>Labore consequatur incidid dolore</h2>
@@ -176,22 +193,22 @@
     <section class="clients">
       <div class="container">
         <div class="row">
-          <div class="col-lg-3 col-md-6 col-xs-12">
+          <div class="col-lg-3 col-md-6 text-center">
             <p>
               Clients
             </p>
           </div>
-          <div class="col-lg-3 col-md-6 col-xs-12">
+          <div class="col-lg-3 col-md-6 text-center">
             <p>
               Projects
             </p>
           </div>
-          <div class="col-lg-3 col-md-6 col-xs-12">
+          <div class="col-lg-3 col-md-6 text-center">
             <p>
               Hours Of Support
             </p>
           </div>
-          <div class="col-lg-3 col-md-6 col-xs-12">
+          <div class="col-lg-3 col-md-6 text-center">
             <p>
               Workers
             </p>
@@ -206,12 +223,11 @@
           <h2 class="block__modal-subtitle">What Are They <strong>Saying About Us</strong></h2>
         </div>
       </div>
-      <div class="container">
+      <div class="container mt-5">
         <div class="row">
-          <div class="col-lg-2"></div>
-          <div class="col-lg-8">
+          <div class="col-lg-6 offset-lg-2">
             <div class="row">
-              <div class="col-lg-10 border-right">
+              <div class="col-lg-12 border-right">
                 <p class="testimonials-text">
                   <i class="bi bi-quote"></i>
                   Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium
@@ -228,12 +244,11 @@
                   <i class="bi bi-star-fill"></i>
                 </div>
               </div>
-              <div class="col-lg-2">
-                <img src="./images/testimonials-1.jpg" class="img-fluid founder" alt="author" />
-              </div>
             </div>
           </div>
-          <div class="col-lg-2"></div>
+          <div class="col-lg-4 mt-5 mt-lg-0 d-flex justify-content-center justify-content-lg-start">
+            <img src="./images/testimonials-1.jpg" class="img-fluid founder" alt="author" />
+          </div>
         </div>
       </div>
     </section>
@@ -264,22 +279,7 @@
       <div class="section-article">
         <div class="container">
           <div class="row">
-            <div class="col-lg-4">
-              <article class="card">
-                <div class="card__top">
-                  <img src="./images/chefs-1.jpg" class="img-fluid" alt="chefs">
-                </div>
-                <div class="card__bottom">
-                  <h2 class="card__bottom-title">Walter White</h2>
-                  <h4 class="card__bottom-subtitle">Master Chef</h4>
-                  <p class="card__bottom-desc">
-                    Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum
-                    exercitationem
-                    iure minima enim corporis et voluptate.</p>
-                </div>
-              </article>
-            </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-6">
               <article class="card">
                 <div class="card__top">
                   <img src="./images/chefs-1.jpg" class="img-fluid" alt="chefs">
@@ -316,10 +316,69 @@
                 </div>
               </article>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-6">
               <article class="card">
                 <div class="card__top">
                   <img src="./images/chefs-1.jpg" class="img-fluid" alt="chefs">
+                  <ul class="card__top-menu">
+                    <li class="card__top-menu-item">
+                      <a href="#">
+                        <i class='bx bxl-twitter'></i>
+                      </a>
+                    </li>
+                    <li class="card__top-menu-item">
+                      <a href="#">
+                        <i class='bx bxl-facebook-circle'></i>
+                      </a>
+                    </li>
+                    <li class="card__top-menu-item">
+                      <a href="#">
+                        <i class='bx bxl-instagram'></i>
+                      </a>
+                    </li>
+                    <li class="card__top-menu-item">
+                      <a href="#">
+                        <i class='bx bxl-linkedin-square'></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card__bottom">
+                  <h2 class="card__bottom-title">Walter White</h2>
+                  <h4 class="card__bottom-subtitle">Master Chef</h4>
+                  <p class="card__bottom-desc">
+                    Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum
+                    exercitationem
+                    iure minima enim corporis et voluptate.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <article class="card">
+                <div class="card__top">
+                  <img src="./images/chefs-1.jpg" class="img-fluid" alt="chefs">
+                  <ul class="card__top-menu">
+                    <li class="card__top-menu-item">
+                      <a href="#">
+                        <i class='bx bxl-twitter'></i>
+                      </a>
+                    </li>
+                    <li class="card__top-menu-item">
+                      <a href="#">
+                        <i class='bx bxl-facebook-circle'></i>
+                      </a>
+                    </li>
+                    <li class="card__top-menu-item">
+                      <a href="#">
+                        <i class='bx bxl-instagram'></i>
+                      </a>
+                    </li>
+                    <li class="card__top-menu-item">
+                      <a href="#">
+                        <i class='bx bxl-linkedin-square'></i>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
                 <div class="card__bottom">
                   <h2 class="card__bottom-title">Walter White</h2>
@@ -342,11 +401,11 @@
           <h2 class="block__modal-subtitle">Book <strong>Your Stay</strong>With Us</h2>
         </div>
       </div>
-      <div class="state__container">
+      <div class="mt-5">
         <div class="container">
-          <div class="row gray">
+          <div class="row gray align-items-center">
             <div class="col-lg-4 reservation"></div>
-            <div class="col-lg-8 stateCont">
+            <div class="col-lg-8 stateCont my-5 my-lg-0">
               <div class="row">
                 <div class="col-lg-4">
                   <input type="text" placeholder="Your Name">
@@ -388,8 +447,8 @@
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
           frameborder="0" allowfullscreen=""></iframe>
         <div class="address__block">
-          <div class="row">
-            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+          <div class="row g-4">
+            <div class="col-md-6 ">
               <div class="address__block-card d-flex align-items-center">
                 <i class='bx bx-map-alt'></i>
                 <div class="address__block-card-desc">
@@ -398,7 +457,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+            <div class="col-md-6">
               <div class="address__block-card d-flex align-items-center">
                 <i class='bx bx-map-alt'></i>
                 <div class="address__block-card-desc">
@@ -407,7 +466,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+            <div class="col-md-6">
               <div class="address__block-card d-flex align-items-center">
                 <i class='bx bx-map-alt'></i>
                 <div class="address__block-card-desc">
@@ -416,7 +475,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+            <div class="col-md-6">
               <div class="address__block-card d-flex align-items-center">
                 <i class='bx bx-map-alt'></i>
                 <div class="address__block-card-desc">
@@ -451,8 +510,8 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__top">
-        <div class="row align-items-start">
-          <div class="col-lg-3 icons col-md-6 col-xs-12 col-sm-12">
+        <div class="row">
+          <div class="col-lg-3 mb-1 mb-lg-0 icons col-md-6">
             <h2>Address</h2>
             <i class="bi bx bi-geo-alt"></i>
             <ul class="footer__top-menu">
@@ -460,7 +519,7 @@
               <li class="footer__top-menu-item">New York, NY 535022 - US</li>
             </ul>
           </div>
-          <div class="col-lg-3 col-md-6 icons col-xs-12 col-sm-12">
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 icons">
             <h2>Reservations</h2>
             <i class="bi bx bi-telephone"></i>
             <ul class="footer__top-menu">
@@ -468,7 +527,7 @@
               <li class="footer__top-menu-item">Email: info@example.com</li>
             </ul>
           </div>
-          <div class="col-lg-3 col-md-6 icons col-xs-12 col-sm-12">
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 icons">
             <h2>Opening Hours</h2>
             <i class="bi bx bi-clock"></i>
             <ul class="footer__top-menu">
@@ -476,8 +535,8 @@
               <li class="footer__top-menu-item">Sunday: Closed</li>
             </ul>
           </div>
-          <div class="col-lg-3 col-md-6 icons col-xs-12 col-sm-12">
-            <h2>Follow Us</h2>
+          <div class="col-lg-3 col-md-6 icons">
+            <h2 class="p-0 mb-2">Follow Us</h2>
             <div class="social-icon d-flex">
               <div class="icon">
                 <i class='bx bxl-twitter'></i>
