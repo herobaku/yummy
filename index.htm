@@ -24,24 +24,24 @@
             <a href="#" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">About</a>
+            <a href="#about" class="nav-link">About</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Events</a>
+            <a href="#events" class="nav-link">Events</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Chefs</a>
+            <a href="#chefs" class="nav-link">Chefs</a>
           </li>
           <li class="nav-item submenu-link">
             <a href="#" class="nav-link">Drop Down </a>
-            <!-- <ul>
+            <ul class="submenu">
               <li><a href="#" class="nav-link">Drop Down 1</a></li>
               <li class="submenu-link">
                 <a href="#" class="nav-link d-flex justify-content-between align-items-center">
                   Deep Drop Down
                   <i class='bx bxs-chevron-down ps-4'></i>
                 </a>
-                <ul>
+                <ul class="submenu">
                   <li><a href="#" class="nav-link">Drop Down 1</a></li>
                   <li><a href="#" class="nav-link">Drop Down 2</a></li>
                   <li><a href="#" class="nav-link">Drop Down 3</a></li>
@@ -50,10 +50,10 @@
               <li><a href="#" class="nav-link">Drop Down 2</a></li>
               <li><a href="#" class="nav-link">Drop Down 3</a></li>
               <li><a href="#" class="nav-link">Drop Down 4</a></li>
-            </ul> -->
+            </ul>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Contact</a>
+            <a href="#contact" class="nav-link">Contact</a>
           </li>
         </ul>
         <a href="#" class="btn btn-danger">Book a Table</a>
@@ -84,7 +84,7 @@
     </div>
   </section>
   <main class="main">
-    <section class="about">
+    <section id="about" class="about">
       <div class="block__modal">
         <div class="container">
           <h4 class="block__modal-title">About Us</h4>
@@ -252,7 +252,7 @@
         </div>
       </div>
     </section>
-    <section class="events">
+    <section id="events" class="events">
       <div class="block__modal">
         <div class="container">
           <h4 class="block__modal-title">EVENTS</h4>
@@ -510,45 +510,47 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__top">
-        <div class="row">
-          <div class="col-lg-3 mb-1 mb-lg-0 icons col-md-6">
-            <h2>Address</h2>
-            <i class="bi bx bi-geo-alt"></i>
-            <ul class="footer__top-menu">
-              <li class="footer__top-menu-item">A108 Adam Street</li>
-              <li class="footer__top-menu-item">New York, NY 535022 - US</li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 icons">
-            <h2>Reservations</h2>
-            <i class="bi bx bi-telephone"></i>
-            <ul class="footer__top-menu">
-              <li class="footer__top-menu-item">Phone: +1 5589 55488 55</li>
-              <li class="footer__top-menu-item">Email: info@example.com</li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 icons">
-            <h2>Opening Hours</h2>
-            <i class="bi bx bi-clock"></i>
-            <ul class="footer__top-menu">
-              <li class="footer__top-menu-item">Mon-Sat: 11AM - 23PM</li>
-              <li class="footer__top-menu-item">Sunday: Closed</li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-6 icons">
-            <h2 class="p-0 mb-2">Follow Us</h2>
-            <div class="social-icon d-flex">
-              <div class="icon">
-                <i class='bx bxl-twitter'></i>
-              </div>
-              <div class="icon">
-                <i class='bx bxl-facebook-circle'></i>
-              </div>
-              <div class="icon">
-                <i class='bx bxl-instagram'></i>
-              </div>
-              <div class="icon">
-                <i class='bx bxl-linkedin-square'></i>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 me-3 me-sm-0 mb-1 mb-lg-0 icons col-md-6">
+              <h2>Address</h2>
+              <i class="bi bx bi-geo-alt"></i>
+              <ul class="footer__top-menu">
+                <li class="footer__top-menu-item">A108 Adam Street</li>
+                <li class="footer__top-menu-item">New York, NY 535022 - US</li>
+              </ul>
+            </div>
+            <div class="col-lg-3 me-3 me-sm-0 col-md-6 mb-4 mb-lg-0 icons">
+              <h2>Reservations</h2>
+              <i class="bi bx bi-telephone"></i>
+              <ul class="footer__top-menu">
+                <li class="footer__top-menu-item">Phone: +1 5589 55488 55</li>
+                <li class="footer__top-menu-item">Email: info@example.com</li>
+              </ul>
+            </div>
+            <div class="col-lg-3 me-3 me-sm-0 col-md-6 mb-4 mb-lg-0 icons">
+              <h2>Opening Hours</h2>
+              <i class="bi bx bi-clock"></i>
+              <ul class="footer__top-menu">
+                <li class="footer__top-menu-item">Mon-Sat: 11AM - 23PM</li>
+                <li class="footer__top-menu-item">Sunday: Closed</li>
+              </ul>
+            </div>
+            <div class="col-lg-3 ms-sm-0 col-md-6 icons">
+              <h2 class="p-0 mb-2">Follow Us</h2>
+              <div class="social-icon d-flex">
+                <div class="icon">
+                  <i class='bx bxl-twitter'></i>
+                </div>
+                <div class="icon">
+                  <i class='bx bxl-facebook-circle'></i>
+                </div>
+                <div class="icon">
+                  <i class='bx bxl-instagram'></i>
+                </div>
+                <div class="icon">
+                  <i class='bx bxl-linkedin-square'></i>
+                </div>
               </div>
             </div>
           </div>
