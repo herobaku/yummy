@@ -728,7 +728,6 @@ footer.footer {
   &-circle {
     position: absolute;
     top: 50%;
-    overflow: hidden;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80px;
@@ -755,7 +754,7 @@ footer.footer {
       animation: play linear 2s infinite;
     }
     & i {
-      font-size: 2.5rem;
+      font-size: 2rem;
       color: #fff;
       z-index: 5;
     }

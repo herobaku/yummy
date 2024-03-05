@@ -880,7 +880,6 @@ footer.footer {
 .about__construct-info-play-circle {
   position: absolute;
   top: 50%;
-  overflow: hidden;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -917,7 +916,7 @@ footer.footer {
           animation: play linear 2s infinite;
 }
 .about__construct-info-play-circle i {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #fff;
   z-index: 5;
 }
